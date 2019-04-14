@@ -1,0 +1,5 @@
+/*C3*/SET SCHEMA PUBLIC
+drop table deneme if exists
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table deneme (id bigint not null, primary key (id))
