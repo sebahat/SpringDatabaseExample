@@ -14,6 +14,8 @@ public class InstructorServiceTest {
     @Autowired
     InstructorDaoImpl dao;
 
+    //TODO ADD TEST SCRİPT THEN TESTİNG 09.05.2019
+
     @Test
     public void test() {
         int id = 112;

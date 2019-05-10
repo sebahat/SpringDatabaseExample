@@ -2,6 +2,7 @@ package com.backend.backend.daoImpl;
 
 import com.backend.backend.dao.InstructorDetailDao;
 import com.backend.backend.dto.InsructorDetail;
+import com.backend.backend.dto.Instructor;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -16,13 +17,25 @@ public class InstructorDetailDaoImpl implements InstructorDetailDao {
     EntityManager entityManager;
 
     @Override
-    public List<InsructorDetail> getInstructorDetail() {
+    public InsructorDetail getInstructorDetail(Integer instructorDetailId) {
+
+        return entityManager.find(InsructorDetail.class, instructorDetailId);
+    }
+
+    @Override
+    public void saveInstructorDetail(InsructorDetail instructorDetail) {
+        entityManager.persist(instructorDetail);
+    }
+
+    @Override
+    public InsructorDetail instructorDetailUpdate() {
         return null;
     }
 
     @Override
-    public InsructorDetail saveInstructorDetail() {
-        return null;
+    public Instructor getInstructor(Integer instructorDetailId) {
+        InsructorDetail detail = entityManager.find(InsructorDetail.class, instructorDetailId);
+        return detail.getInstructor();
     }
 }
 

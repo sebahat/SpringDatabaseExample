@@ -13,7 +13,6 @@ public interface InstructorDao {
 
     public Instructor getCourses();
 
-
     public Instructor getInstructor(Integer id);
 
     public InsructorDetail getInstructorDetail(Integer instructorId);

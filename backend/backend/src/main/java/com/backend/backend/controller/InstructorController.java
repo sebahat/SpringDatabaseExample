@@ -34,7 +34,7 @@ public class InstructorController {
         }
     }
 
-
+    //TODO variable name change add postman collection 09.05.2019
     @PostMapping(path = "/addInstrInstructorDetail")
     public InsructorDetail addInstrInstructorDetail(@RequestBody String requestAddBody) {
         JSONObject requestBody = new JSONObject(requestAddBody);
@@ -43,4 +43,5 @@ public class InstructorController {
         InsructorDetail detail = new InsructorDetail(instructor_detail_obj.getString("youtubeChannel"), instructor_detail_obj.getString("hobby"));
         return instructorService.addInstrInstructorDetail(intructor_id, detail);
     }
+
 }
