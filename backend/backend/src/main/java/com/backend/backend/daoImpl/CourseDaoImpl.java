@@ -1,8 +1,8 @@
 package com.backend.backend.daoImpl;
 
 import com.backend.backend.dao.CourseDao;
-import com.backend.backend.dto.Courses;
-import com.backend.backend.dto.Instructor;
+import com.backend.backend.model.Courses;
+import com.backend.backend.model.Instructor;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -32,8 +32,9 @@ public class CourseDaoImpl implements CourseDao {
     }
 
     @Override
-    public void updateCourse(Integer courseName) {
-
+    public void updateCourse(Integer courseId, String title) {
+        Courses tmpCourse = entityManager.find(Courses.class, courseId);
+        tmpCourse.setTitle(title);
     }
 
     @Override

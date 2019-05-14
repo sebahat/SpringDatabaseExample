@@ -1,8 +1,8 @@
 package com.backend.backend.daoImpl;
 
 import com.backend.backend.dao.InstructorDao;
-import com.backend.backend.dto.InsructorDetail;
-import com.backend.backend.dto.Instructor;
+import com.backend.backend.model.InsructorDetail;
+import com.backend.backend.model.Instructor;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.ResponseBody;

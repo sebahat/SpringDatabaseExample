@@ -1,8 +1,8 @@
 package com.backend.backend.controller;
 
 
-import com.backend.backend.dto.InsructorDetail;
-import com.backend.backend.dto.Instructor;
+import com.backend.backend.model.InsructorDetail;
+import com.backend.backend.model.Instructor;
 import com.backend.backend.service.InstructorDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

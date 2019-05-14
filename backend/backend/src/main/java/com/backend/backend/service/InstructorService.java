@@ -1,8 +1,8 @@
 package com.backend.backend.service;
 
 import com.backend.backend.dao.InstructorDao;
-import com.backend.backend.dto.InsructorDetail;
-import com.backend.backend.dto.Instructor;
+import com.backend.backend.model.InsructorDetail;
+import com.backend.backend.model.Instructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

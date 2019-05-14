@@ -1,7 +1,7 @@
 package com.backend.backend.controller;
 
-import com.backend.backend.dto.InsructorDetail;
-import com.backend.backend.dto.Instructor;
+import com.backend.backend.model.InsructorDetail;
+import com.backend.backend.model.Instructor;
 import com.backend.backend.service.InstructorService;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;

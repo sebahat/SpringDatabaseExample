@@ -1,9 +1,8 @@
 package com.backend.backend.service;
 
 import com.backend.backend.dao.CourseDao;
-import com.backend.backend.daoImpl.CourseDaoImpl;
-import com.backend.backend.dto.Courses;
-import com.backend.backend.dto.Instructor;
+import com.backend.backend.model.Courses;
+import com.backend.backend.model.Instructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,4 +27,9 @@ public class CourseService {
     public void addCourse(Courses course) {
         courseDao.addCourse(course);
     }
+
+    public void updateCourse(Integer courseId, String title) {
+        courseDao.updateCourse(courseId,title);
+    }
+
 }

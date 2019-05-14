@@ -1,19 +1,17 @@
 package com.backend.backend.dao;
 
-import com.backend.backend.dto.InsructorDetail;
-import com.backend.backend.dto.Instructor;
-
-import java.util.List;
+import com.backend.backend.model.InsructorDetail;
+import com.backend.backend.model.Instructor;
 
 public interface InstructorDetailDao {
 
 
-    public InsructorDetail getInstructorDetail(Integer instuctorDetailId);
+    InsructorDetail getInstructorDetail(Integer instuctorDetailId);
 
-    public void saveInstructorDetail(InsructorDetail detail);
+    void saveInstructorDetail(InsructorDetail detail);
 
-    public InsructorDetail instructorDetailUpdate();
+    InsructorDetail instructorDetailUpdate();
 
-    public Instructor getInstructor(Integer instructorDetailId);
+    Instructor getInstructor(Integer instructorDetailId);
 
 }

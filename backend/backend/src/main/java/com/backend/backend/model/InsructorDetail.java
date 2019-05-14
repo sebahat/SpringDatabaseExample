@@ -1,13 +1,14 @@
-package com.backend.backend.dto;
+package com.backend.backend.model;
 
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "instructordetail", schema = "backend")
-public class InsructorDetail {
+public class InsructorDetail implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id")

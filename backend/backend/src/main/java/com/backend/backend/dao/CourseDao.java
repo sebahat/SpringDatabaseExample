@@ -1,16 +1,16 @@
 package com.backend.backend.dao;
 
-import com.backend.backend.dto.Courses;
-import com.backend.backend.dto.Instructor;
+import com.backend.backend.model.Courses;
+import com.backend.backend.model.Instructor;
 
 public interface CourseDao {
-    public Courses getCourse(Integer courseId);
+    Courses getCourse(Integer courseId);
 
-    public Instructor getCourseInstructor(Integer courseId);
+    Instructor getCourseInstructor(Integer courseId);
 
-    public void deleteCourse(Integer courseId);
+    void deleteCourse(Integer courseId);
 
-    public void updateCourse(Integer courseName);
+    void updateCourse(Integer courseId, String title);
 
-    public void addCourse(Courses course);
+    void addCourse(Courses course);
 }

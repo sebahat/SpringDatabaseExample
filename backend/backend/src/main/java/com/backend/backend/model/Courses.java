@@ -1,10 +1,11 @@
-package com.backend.backend.dto;
+package com.backend.backend.model;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "courses", schema = "backend")
-public class Courses {
+public class Courses  implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id")

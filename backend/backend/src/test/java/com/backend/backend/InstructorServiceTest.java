@@ -2,7 +2,7 @@ package com.backend.backend;
 
 
 import com.backend.backend.daoImpl.InstructorDaoImpl;
-import com.backend.backend.dto.Instructor;
+import com.backend.backend.model.Instructor;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
