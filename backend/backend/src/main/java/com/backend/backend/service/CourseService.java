@@ -1,6 +1,7 @@
 package com.backend.backend.service;
 
 import com.backend.backend.dao.CourseDao;
+import com.backend.backend.daoImpl.CourseDaoImpl;
 import com.backend.backend.dto.Courses;
 import com.backend.backend.dto.Instructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,11 @@ public class CourseService {
         return courseDao.getCourseInstructor(courseId);
     }
 
-    public void deleteCourse(Integer courseId){
+    public void deleteCourse(Integer courseId) {
         courseDao.deleteCourse(courseId);
+    }
+
+    public void addCourse(Courses course) {
+        courseDao.addCourse(course);
     }
 }

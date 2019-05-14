@@ -1,6 +1,8 @@
 package com.backend.backend.dto;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +27,7 @@ public class Instructor {
 
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "instructor_detail_id")
+    @JsonBackReference
     private InsructorDetail instructorDetail;
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "instructor", cascade =
             {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.MERGE, CascadeType.REFRESH})

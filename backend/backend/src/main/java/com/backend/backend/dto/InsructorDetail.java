@@ -1,6 +1,8 @@
 package com.backend.backend.dto;
 
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 
 @Entity
@@ -18,6 +20,7 @@ public class InsructorDetail {
     private String hobby;
     @OneToOne(mappedBy = "instructorDetail", cascade = {CascadeType.DETACH, CascadeType.MERGE,
             CascadeType.PERSIST, CascadeType.REFRESH})
+    @JsonManagedReference
     private Instructor instructor;
 
     public Instructor getInstructor() {

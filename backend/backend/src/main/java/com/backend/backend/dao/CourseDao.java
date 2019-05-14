@@ -12,5 +12,5 @@ public interface CourseDao {
 
     public void updateCourse(Integer courseName);
 
-    public void addCourse(Integer courseId);
+    public void addCourse(Courses course);
 }
