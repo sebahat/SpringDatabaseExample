@@ -1,8 +1,3 @@
-DROP SCHEMA backend CASCADE;
-
-CREATE SCHEMA backend
-  AUTHORIZATION postgres;
-
 
 CREATE TABLE backend.instructordetail
 (

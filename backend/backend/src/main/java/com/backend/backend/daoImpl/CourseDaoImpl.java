@@ -12,6 +12,7 @@ import javax.persistence.PersistenceContext;
 @Repository
 @Transactional
 public class CourseDaoImpl implements CourseDao {
+    //Persistence Context managed lifecyle entity Entity manager
     @PersistenceContext
     EntityManager entityManager;
 
